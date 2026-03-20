@@ -74,19 +74,19 @@ export default function Home() {
           </thead>
           <tbody>
             <tr>
-              <td>"Customer Phone Number" has replied</td>
+              <td>How many customers did my sales replies within the time window</td>
               {result.repliedCustomers.map((val, idx) => <td key={idx}>{val}</td>)}
             </tr>
             <tr>
-              <td>"Customer Phone Number" has reached out</td>
+              <td>How many customers proactive reached out within the time window</td>
               {result.reachedOutCustomers.map((val, idx) => <td key={idx}>{val}</td>)}
             </tr>
             <tr>
-              <td>Messages has replied</td>
+              <td>How many messages did my sales replies within the time window</td>
               {result.repliedMessages.map((val, idx) => <td key={idx}>{val}</td>)}
             </tr>
             <tr>
-              <td>Messages has reached out</td>
+              <td>How many messages proactive reached out within the time window</td>
               {result.reachedOutMessages.map((val, idx) => <td key={idx}>{val}</td>)}
             </tr>
           </tbody>
